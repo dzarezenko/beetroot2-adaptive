@@ -1,0 +1,56 @@
+div {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+/*
+540px	720px	960px	1140px
+*/
+
+@media screen and (min-width: 540px) and (max-width: 719px) {
+  div {
+    background-color: green;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  div {
+    background-color: blue;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  div {
+    width: 100px;
+    height: 250px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  div {
+    width: 250px;
+    height: 100px;
+  }
+}
+
+@media screen and (min-resolution: 2dppx) {
+  div {
+    background-color: orange;
+  }
+}
+
+/*@media screen and (max-width: 1140px) {
+  div {
+    background-color: green;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 1139px) {
+  div {
+    background-color: blue;
+  }
+}*/
