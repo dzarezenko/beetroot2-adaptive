@@ -1,15 +1,32 @@
 div {
   display: block;
-  width: 200px;
-  height: 200px;
-  background-color: red;
+  width: 600px;
+  height: 600px;
+}
+
+@media screen and (min-resolution: 1dppx) {
+  div {
+    background-image: url('../img/cat.jpg');
+  }
+}
+
+@media screen and (min-resolution: 2dppx) {
+  div {
+    background-image: url('../img/dog.jpg');
+  }
+}
+
+@media screen and (min-resolution: 3dppx) {
+  div {
+    background-image: url('../img/humster.jpg');
+  }
 }
 
 /*
 540px	720px	960px	1140px
 */
 
-@media screen and (min-width: 540px) and (max-width: 719px) {
+/*@media screen and (min-width: 540px) and (max-width: 719px) {
   div {
     background-color: green;
     width: 300px;
@@ -40,7 +57,7 @@ div {
   div {
     background-color: orange;
   }
-}
+}*/
 
 /*@media screen and (max-width: 1140px) {
   div {
