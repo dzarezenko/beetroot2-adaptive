@@ -5,12 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adaptive</title>
   <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/main.js"></script>
 </head>
 <body>
   <!--div></div-->
   
-  <img src="./img/cat.jpg" srcset="./img/cat.jpg 1x, ./img/dog.jpg 2x, ./img/humster.jpg 3x"
-      alt="Some animal" />
+  <!--img src="./img/cat.jpg" srcset="./img/cat.jpg 1x, ./img/dog.jpg 2x, ./img/humster.jpg 3x"
+      alt="Some animal" /-->
+
+  <!--picture>
+    <source media="(min-width: 400px)" srcset="./img/cat.jpg">
+    <source media="(min-width: 600px)" srcset="./img/dog.jpg">
+    <source media="(min-width: 800px)" srcset="./img/humster.jpg">
+
+    <img srcset="./img/cat.jpg" />
+      
+  </picture-->
+
+  <button onclick="changeImage()">OK</button>
+  <br /><br /><br />
+  <img id="animalPhoto" src="./img/cat.jpg" alt="" />
 
 </body>
 </html>
